@@ -15,4 +15,6 @@ HEALTHCHECK --interval=60s --timeout=15s --start-period=120s \
 
 VOLUME ["/vpn"]
 
+WORKDIR /vpn
+
 ENTRYPOINT ["openvpn.sh"]

@@ -195,7 +195,7 @@ The 'command' (if provided and valid) will be run instead of openvpn
     exit $RC
 }
 
-dir="/vpn"
+dir=$(pwd)
 auth="$dir/vpn.cert_auth"
 conf="$dir/vpn.conf"
 cert="$dir/vpn-ca.crt"
